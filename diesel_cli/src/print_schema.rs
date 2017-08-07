@@ -28,7 +28,7 @@ pub fn run_print_schema(
     let table_data = load_table_names(database_url, schema_name)?
         .into_iter()
         .filter(|t| !filtering.should_filter_table(t))
-        .map(|t| load_table_data(&database_url, t))
+        .map(|t| load_table_data(database_url, t))
         .collect::<Result<_, Box<Error>>>()?;
     let definitions = TableDefinitions(table_data);
 

@@ -322,7 +322,7 @@ fn run_infer_schema(matches: &ArgMatches) {
         &database_url,
         schema_name.as_ref().map(|s| &**s),
         &filter,
-    ).map_err(|e| handle_error::<_, ()>(e));
+    ).map_err(handle_error::<_, ()>);
 }
 
 #[cfg(test)]
