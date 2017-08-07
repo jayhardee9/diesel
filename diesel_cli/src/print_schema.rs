@@ -46,7 +46,7 @@ impl<'a> Display for ModuleDefinition<'a> {
     fn fmt(&self, f: &mut Formatter) -> fmt::Result {
         {
             let mut out = PadAdapter::new(f);
-            writeln!(out, "mod {} {{", self.0)?;
+            writeln!(out, "pub mod {} {{", self.0)?;
             write!(out, "{}", self.1)?;
         }
         writeln!(f, "}}")?;

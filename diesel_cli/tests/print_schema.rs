@@ -235,7 +235,7 @@ fn print_schema_specifying_schema_name() {
     assert!(result.is_success(), "Result was unsuccessful {:?}", result);
 
     assert_eq!(result.stdout(),
-r"mod custom_schema {
+r"pub mod custom_schema {
     table! {
         custom_schema.in_schema (id) {
             id -> Int4,
