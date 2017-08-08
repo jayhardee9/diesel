@@ -6,8 +6,8 @@ authors = ["Sean Griffin <sean@seantheprogrammer.com>"]
 [workspace]
 
 [dependencies]
-diesel = { version = "0.15.0", features = ["extras", "sqlite", "postgres", "mysql"] }
-diesel_codegen = { version = "0.15.0" }
+diesel = { path = "../diesel", features = ["extras", "sqlite", "postgres", "mysql"] }
+diesel_codegen = { path = "../diesel_codegen" }
 compiletest_rs = "=0.2.7"
 
 [replace]

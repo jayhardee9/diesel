@@ -14,8 +14,8 @@ keywords = ["orm", "database", "postgres", "sql", "codegen"]
 syn = { version = "0.11.4", features = ["aster"] }
 quote = "0.3.12"
 dotenv = { version = ">=0.8, <0.11", optional = true, default-features = false }
-diesel = { version = "0.15.2", default-features = false }
-diesel_infer_schema = { version = "0.15.0", default-features = false, optional = true }
+diesel = { path = "../diesel", default-features = false }
+diesel_infer_schema = { path = "../diesel_infer_schema", default-features = false, optional = true }
 clippy = { optional = true, version = "=0.0.138" }
 
 [dev-dependencies]

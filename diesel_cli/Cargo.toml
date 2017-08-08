@@ -16,7 +16,7 @@ name = "diesel"
 [dependencies]
 chrono = "0.4"
 clap = "2.20.3"
-diesel = { version = "0.15.0", default-features = false }
+diesel = { path = "../diesel", default-features = false }
 dotenv = ">=0.8, <0.11"
 diesel_infer_schema = "0.15.0"
 clippy = { optional = true, version = "=0.0.138" }
