@@ -9,7 +9,7 @@ pub struct PgMetadataLookup {
 }
 
 impl PgMetadataLookup {
-    pub(crate) fn new(conn: &PgConnection) -> &Self {
+    pub fn new(conn: &PgConnection) -> &Self {
         unsafe { mem::transmute(conn) }
     }
 
